@@ -68,7 +68,8 @@ nav div:first-child {
 
 .social-links {
   text-align: center;
-  margin: 20px;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -79,7 +80,7 @@ footer {
 .fa-square-facebook,
 .fa-x-twitter,
 .fa-instagram {
-  color: #089447;
+  color: hsla(147, 90%, 31%, 0.6);
   font-size: 32px;
 }
 
@@ -115,10 +116,6 @@ footer {
     background-color: #e87e24;
   }
 
-  nav div a.logo:hover {
-    background-color: none;
-  }
-
   .open-sidebar-button,
   .closed-sidebar-button {
     padding: 20px;
@@ -140,8 +137,12 @@ footer {
   }
 }
 
-.flex-container {
+.main-container {
+}
+
+.flex-container img {
   flex: 0 1 34em;
+  border-radius: 10px;
 }
 
 /* button {
