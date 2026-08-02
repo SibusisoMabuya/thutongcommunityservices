@@ -42,10 +42,6 @@ nav div a {
   margin-left: auto;
 }
 
-nav div a:hover {
-  background-color: #e87e24;
-}
-
 nav .logo {
   height: 48px;
   margin-right: auto;
@@ -55,6 +51,12 @@ nav div:first-child {
   margin-right: auto;
 }
 
+.fa-bars,
+.fa-xmark {
+  color: #3c3c3b;
+  font-size: 32px;
+}
+
 #sidebar-active {
   display: none;
 }
@@ -62,6 +64,23 @@ nav div:first-child {
 .open-sidebar-button,
 .closed-sidebar-button {
   display: none;
+}
+
+.social-links {
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.fa-square-facebook,
+.fa-x-twitter,
+.fa-instagram {
+  color: #089447;
+  font-size: 32px;
 }
 
 @media (max-width: 500px) {
@@ -85,6 +104,18 @@ nav div:first-child {
     width: 100%;
     padding: 20px 30px;
     justify-content: flex-start;
+  }
+
+  nav div a .logo:hover {
+    background-color: none;
+  }
+
+  nav div a:hover {
+    /* background-color: #e87e24; */
+  }
+
+  nav div a.logo:hover {
+    background-color: none;
   }
 
   .open-sidebar-button,
