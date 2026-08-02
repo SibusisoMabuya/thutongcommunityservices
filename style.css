@@ -84,6 +84,11 @@ footer {
 }
 
 @media (max-width: 500px) {
+  section,
+  main,
+  footer {
+    margin: 10px;
+  }
   .links-container {
     flex-direction: column;
     align-items: flex-start;
@@ -106,11 +111,7 @@ footer {
     justify-content: flex-start;
   }
 
-  nav div a .logo:hover {
-    background-color: none;
-  }
-
-  nav div a:hover {
+  nav div a:hover:nth-child(n + 2) {
     background-color: #e87e24;
   }
 
