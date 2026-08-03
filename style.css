@@ -66,21 +66,26 @@ nav div:first-child {
   display: none;
 }
 
+.main-container {
+  display: flex;
+}
+
 .social-links {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
   font-size: 0.7em;
+  color: hsla(60, 1%, 23%, 0.7);
 }
 
 .fa-square-facebook,
 .fa-x-twitter,
 .fa-instagram {
-  color: hsla(147, 90%, 31%, 0.6);
+  color: hsla(28, 81%, 53%, 0.8);
   font-size: 32px;
 }
 
@@ -137,12 +142,21 @@ footer {
   }
 }
 
-.main-container {
-}
-
 .flex-container img {
   flex: 0 1 34em;
   border-radius: 10px;
+}
+
+.cardFNB .cardHeaderFNB img {
+  height: 2rem;
+}
+
+.cardNedbank .cardHeaderNedbank img {
+  height: 2rem;
+}
+
+.cardPayPal .cardHeaderPayPal img {
+  height: 2rem;
 }
 
 /* button {
