@@ -149,14 +149,17 @@ footer {
 
 .cardFNB .cardHeaderFNB img {
   height: 2rem;
+  width: 2rem;
 }
 
 .cardNedbank .cardHeaderNedbank img {
   height: 2rem;
+  width: 2rem;
 }
 
 .cardPayPal .cardHeaderPayPal img {
   height: 2rem;
+  width: 2rem;
 }
 
 /* button {
