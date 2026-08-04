@@ -12,9 +12,15 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: oklch(58.383% 0.15579 150.805 / 0.1);
 }
+
+/* header {
+  position: fixed;
+} */
 
 nav {
   height: 80px;
@@ -66,8 +72,13 @@ nav div:first-child {
   display: none;
 }
 
+main {
+  flex-grow: 1;
+}
+
 .main-container {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .card .cardHeader img {
@@ -82,8 +93,11 @@ nav div:first-child {
 }
 
 footer {
+  /* position: fixed;
+  bottom: 0;
+  width: 100vw; */
   text-align: center;
-  font-size: 0.5em;
+  font-size: 0.55em;
   color: hsla(60, 1%, 23%, 0.7);
 }
 
