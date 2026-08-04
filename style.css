@@ -70,6 +70,11 @@ nav div:first-child {
   display: flex;
 }
 
+.card .cardHeader img {
+  height: 48px;
+  width: 48px;
+}
+
 .social-links {
   text-align: center;
   margin-top: 40px;
@@ -78,7 +83,7 @@ nav div:first-child {
 
 footer {
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.5em;
   color: hsla(60, 1%, 23%, 0.7);
 }
 
@@ -145,11 +150,6 @@ footer {
 .flex-container img {
   flex: 0 1 34em;
   border-radius: 10px;
-}
-
-.card .cardHeader img {
-  height: 48px;
-  width: 48px;
 }
 
 /* button {
