@@ -80,10 +80,15 @@ main {
   display: flex;
   justify-content: space-evenly;
 }
+.boardMembers img {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
 
 .card .cardHeader img {
-  height: 48px;
-  width: 48px;
+  height: 400px;
+  width: 400px;
 }
 
 .social-links {
