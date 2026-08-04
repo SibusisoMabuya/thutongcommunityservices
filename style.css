@@ -179,6 +179,7 @@ footer {
 .flex-container img {
   flex: 0 1 34em;
   border-radius: 10px;
+  height: 200px;
 }
 
 /* button {
