@@ -82,7 +82,14 @@ main {
 }
 
 .about {
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10 px;
+
+  align-items: center;
+  align-content: center;
+  /* margin: 40px; */
 }
 
 .boardMembers {
@@ -108,9 +115,7 @@ main {
 }
 
 footer {
-  /* position: fixed;
-  bottom: 0;
-  width: 100vw; */
+  margin-bottom:;
   text-align: center;
   font-size: 0.55em;
   color: hsla(60, 1%, 23%, 0.7);
