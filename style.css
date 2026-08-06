@@ -149,6 +149,16 @@ main {
   border-radius: 15px;
 }
 
+.sponsors {
+  display: flexbox;
+  width: 80%;
+  padding: 20px;
+}
+
+.sponsors img {
+  height: 200px;
+}
+
 .card .cardHeader img {
   height: 48px;
   width: 48px;
@@ -186,7 +196,7 @@ footer {
   .nav-links {
     position: fixed;
     background: teal;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     top: 0;
     right: -200px;
@@ -205,6 +215,11 @@ footer {
 
   .nav-links ul {
     padding: 30px;
+  }
+
+  .sponsors img {
+    width: 80%;
+    height: 80%;
   }
 
   /* section,
