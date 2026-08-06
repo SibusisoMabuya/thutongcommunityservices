@@ -16,19 +16,17 @@
   </head>
   <body>
     <!-- This is the Header element -->
-    <header>
+    <section class="header">
       <nav>
-        <div>
-          <a class="logo" href="index.html">
-            <img
-              class="logo"
-              src="img/Thutong_Logo.svg"
-              alt="Thutong Community Services Logo"
-            />
-          </a>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="sidebar-active" />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/Thutong_Logo.svg"
+            alt="Thutong Community Services Logo"
+          />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <!-- <input type="checkbox" name="" id="sidebar-active" />
           <label for="sidebar-active" class="open-sidebar-button">
             <i class="fa-solid fa-bars"></i>
           </label>
@@ -37,20 +35,89 @@
           <div class="links-container">
             <label for="sidebar-active" class="closed-sidebar-button">
               <i class="fa-solid fa-xmark"></i>
-            </label>
-
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="donate.html">Donate</a>
-          </div>
+            </label> -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
-
-    <section></section>
+    </section>
 
     <main></main>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-column">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              <h3>504 Letlatlagwe Street, Meadowlands, Zone-7, 1852</h3>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h3>+27 76 145 6322</h3>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h3>thutongcommunityservices@gmail.com</h3>
+            </span>
+          </div>
+        </div>
+        <div class="contact-column">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              name="visitor_email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+            <button type="submit" class="hero-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Location -->
+
+    <section class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14318.770178113276!2d27.881846955162317!3d-26.20667803319753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a0e851adf719%3A0x84a7ae220604c4ff!2sMeadowlands%20Zone%207%20Seventh%20Day%20Adventist%20Church!5e0!3m2!1sen!2sza!4v1785939997068!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </section>
 
     <footer>
       <div class="social-links">
@@ -61,11 +128,19 @@
       <p>
         Copyright &copy; 2026 Thutong Community Services. All Rights Reserved.
         <br />
-        <b>Registration Number:</b> 084-823-NPO <br />
-        <b>Head Office Address:</b> 504 Letlatlagwe Street, Meadowlands, Zone-7,
-        1852, South Africa <br />
-        <b>Head Office Number:</b> +27 76 145 6322
+        <b>Registration Number:</b> NPO-084-823 <br />
       </p>
     </footer>
+
+    <!-- JavaScript Toggle for Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

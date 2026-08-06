@@ -16,19 +16,17 @@
   </head>
   <body>
     <!-- This is the Header element -->
-    <header>
+    <section class="header">
       <nav>
-        <div>
-          <a class="logo" href="index.html">
-            <img
-              class="logo"
-              src="img/Thutong_Logo.svg"
-              alt="Thutong Community Services Logo"
-            />
-          </a>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="sidebar-active" />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/Thutong_Logo.svg"
+            alt="Thutong Community Services Logo"
+          />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <!-- <input type="checkbox" name="" id="sidebar-active" />
           <label for="sidebar-active" class="open-sidebar-button">
             <i class="fa-solid fa-bars"></i>
           </label>
@@ -37,22 +35,33 @@
           <div class="links-container">
             <label for="sidebar-active" class="closed-sidebar-button">
               <i class="fa-solid fa-xmark"></i>
-            </label>
-
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="donate.html">Donate</a>
-          </div>
+            </label> -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
+      <div class="text-box">
+        <h1>Soweto's Biggest Feeding Scheme</h1>
+        <p>
+          Supplying nutritious meals to over 3,700 households across Soweto
+          daily.
+        </p>
+        <a href="" class="hero-button">Donate</a>
+      </div>
+    </section>
 
     <section></section>
 
     <main></main>
 
-    <main>
+    <!-- <main>
       <div class="card">
         <div class="cardHeader">
           <img src="/img/FNB.webp" alt="FNB Logo" />
@@ -131,7 +140,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> -->
 
     <footer>
       <div class="social-links">
@@ -142,11 +151,19 @@
       <p>
         Copyright &copy; 2026 Thutong Community Services. All Rights Reserved.
         <br />
-        <b>Registration Number:</b> 084-823-NPO <br />
-        <b>Head Office Address:</b> 504 Letlatlagwe Street, Meadowlands, Zone-7,
-        1852, South Africa <br />
-        <b>Head Office Number:</b> +27 76 145 6322
+        <b>Registration Number:</b> NPO-084-823 <br />
       </p>
     </footer>
+
+    <!-- JavaScript Toggle for Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

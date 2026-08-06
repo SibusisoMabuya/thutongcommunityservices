@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="shortcut icon" href="img/Thutong_Logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- This is the Header element -->
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/Thutong_Logo.svg"
+            alt="Thutong Community Services Logo"
+          />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <!-- <input type="checkbox" name="" id="sidebar-active" />
+          <label for="sidebar-active" class="open-sidebar-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="closed-sidebar-button">
+              <i class="fa-solid fa-xmark"></i>
+            </label> -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <section class="services">
+      <h1>Services Offered in our Center</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit,
+        suscipit.
+      </p>
+
+      <div class="row">
+        <div class="course-cloumn">
+          <h3>Luncheon Club</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis neque quaerat libero enim nisi sapiente mollitia,
+            quibusdam rerum sunt cupiditate, voluptas natus tempore iure
+            reprehenderit facere. Consectetur repudiandae tempora odit.
+          </p>
+        </div>
+        <div class="course-cloumn">
+          <h3>Feeding Scheme</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis neque quaerat libero enim nisi sapiente mollitia,
+            quibusdam rerum sunt cupiditate, voluptas natus tempore iure
+            reprehenderit facere. Consectetur repudiandae tempora odit.
+          </p>
+        </div>
+        <div class="course-cloumn">
+          <h3>Active Ageing</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis neque quaerat libero enim nisi sapiente mollitia,
+            quibusdam rerum sunt cupiditate, voluptas natus tempore iure
+            reprehenderit facere. Consectetur repudiandae tempora odit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p>
+        Copyright &copy; 2026 Thutong Community Services. All Rights Reserved.
+        <br />
+        <b>Registration Number:</b> NPO-084-823 <br />
+      </p>
+    </footer>
+
+    <!-- JavaScript Toggle for Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

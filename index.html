@@ -16,19 +16,17 @@
   </head>
   <body>
     <!-- This is the Header element -->
-    <header>
+    <section class="header">
       <nav>
-        <div>
-          <a class="logo" href="index.html">
-            <img
-              class="logo"
-              src="img/Thutong_Logo.svg"
-              alt="Thutong Community Services Logo"
-            />
-          </a>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="sidebar-active" />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/Thutong_Logo.svg"
+            alt="Thutong Community Services Logo"
+          />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <!-- <input type="checkbox" name="" id="sidebar-active" />
           <label for="sidebar-active" class="open-sidebar-button">
             <i class="fa-solid fa-bars"></i>
           </label>
@@ -37,34 +35,41 @@
           <div class="links-container">
             <label for="sidebar-active" class="closed-sidebar-button">
               <i class="fa-solid fa-xmark"></i>
-            </label>
-
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="donate.html">Donate</a>
-          </div>
+            </label> -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
-    </header>
-    <section>
-      <div class="main-container">
-        <div class="content">
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="row">
+        <div class="hero-column">
           <h1>
             let's create <br />
             a better world <br />
             for all!
           </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            deleniti sit debitis, similique porro nihil provident voluptatibus
+            alias impedit reprehenderit.
+          </p>
+          <a href="about.html" class="hero-button">Explore More</a>
         </div>
-        <div class="flex-container">
-          <img
-            src="/img/hands_holding_bowl.webp"
-            alt="hands holding empty bowl"
-          />
+        <div class="hero-column">
+          <img src="img/hands_holding_bowl.jpg" alt="" />
         </div>
       </div>
     </section>
-    <!-- This is the Main element -->
 
     <main>
       <div>
@@ -78,7 +83,55 @@
       </div>
     </main>
 
-    <!-- <hr /> -->
+    <!-- testimonials -->
+    <section class="testimonials">
+      <h1>What Our Beneficiaries Are Saying</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit,
+        suscipit.
+      </p>
+
+      <div class="row">
+        <div class="testimonial-column">
+          <img src="img/old-woman2.jpg" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              fugit fugiat harum quidem cupiditate veritatis illo ipsa!
+              Deserunt, laborum nihil!
+            </p>
+            <h3>Dorothy Nyembe</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-column">
+          <img src="img/old-man2.jpeg" alt="" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              fugit fugiat harum quidem cupiditate veritatis illo ipsa!
+              Deserunt, laborum nihil!
+            </p>
+            <h3>Abednego Mbatha</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="callToAction">
+      <h1>Partner With Us</h1>
+      <a href="donate.html" class="hero-button">Go to Donation Page</a>
+    </section>
 
     <footer>
       <div class="social-links">
@@ -89,11 +142,19 @@
       <p>
         Copyright &copy; 2026 Thutong Community Services. All Rights Reserved.
         <br />
-        <b>Registration Number:</b> 084-823-NPO <br />
-        <b>Head Office Address:</b> 504 Letlatlagwe Street, Meadowlands, Zone-7,
-        1852, South Africa <br />
-        <b>Head Office Number:</b> +27 76 145 6322
+        <b>Registration Number:</b> NPO-084-823 <br />
       </p>
     </footer>
+
+    <!-- JavaScript Toggle for Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
