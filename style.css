@@ -217,10 +217,18 @@ footer {
     transition: 1s;
   }
 
-  nav .fa-xmark,
-  .fa-bars {
+  nav .fa-xmark {
     display: block;
     margin: 10px;
+    color: #e2ffef;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  nav .fa-bars {
+    display: block;
+    margin: 10px;
+    color: #231f20;
     font-size: 32px;
     cursor: pointer;
   }
