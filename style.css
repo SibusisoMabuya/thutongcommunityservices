@@ -105,6 +105,13 @@ nav .fa-xmark,
   display: none;
 }
 
+.info {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  text-align: center;
+}
+
 /* .links-container {
   height: 100%;
   width: 100%;
@@ -466,6 +473,15 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.contact-column div a {
+  text-decoration: none;
+}
+
+.contact-column div h3:hover {
+  color: #e87e24;
+  transition: 0.5s;
+}
+
 .contact-column div .fa-location-dot,
 .fa-phone,
 .fa-envelope {
@@ -512,6 +528,50 @@ button:hover {
 
 /* Donation Page */
 
+.donation {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.donation .banks-column {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.donation .paypal-column {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.donation .crypto-column {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .donation img {
-  width: 400px;
+  width: 100px;
+}
+
+@media (max-width: 700px) {
+  .donation .banks-column {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+  }
+
+  .donation .paypal-column {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .donation .crypto-column {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
 }
