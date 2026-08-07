@@ -201,6 +201,10 @@ footer {
     display: block;
   }
 
+  .nav-links ul li a {
+    color: #e2ffef;
+  }
+
   .nav-links {
     position: fixed;
     background: teal;
