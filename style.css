@@ -26,7 +26,7 @@ header {
 
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 10px 6%;
   justify-content: space-between;
   align-items: center;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
@@ -483,6 +483,11 @@ button:hover {
   width: 80%;
 }
 
+.contact-us h1 {
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
 .contact-column {
   flex-basis: 48%;
   margin-bottom: 30px;
@@ -530,6 +535,10 @@ button:hover {
   font-size: 18px;
 }
 
+.contact-column textarea {
+  resize: none;
+}
+
 @media (max-width: 700px) {
   .contact-column div h3 {
     font-size: 20px;
@@ -541,6 +550,10 @@ button:hover {
   padding: 80px 0;
   width: 80%;
   margin: auto;
+}
+
+.map-wrap h1 {
+  text-decoration: underline;
 }
 
 .map-wrap iframe {
