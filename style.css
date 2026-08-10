@@ -166,13 +166,13 @@ main {
 }
 
 .sponsors {
-  display: flexbox;
+  display: flex;
   width: 80%;
-  padding: 20px;
 }
 
 .sponsors img {
   height: 200px;
+  padding: 20px;
 }
 
 .card .cardHeader img {
@@ -245,9 +245,15 @@ footer {
     padding: 30px;
   }
 
+  .sponsors {
+    display: contents;
+    text-align: center;
+  }
+
   .sponsors img {
-    width: 80%;
-    height: 80%;
+    height: 200px;
+    padding: 30px;
+    width: auto;
   }
 
   /* section,
