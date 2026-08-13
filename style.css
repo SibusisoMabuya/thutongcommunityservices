@@ -215,7 +215,11 @@ footer {
 
   .nav-links {
     position: fixed;
-    background: #144229;
+    background: linear-gradient(
+      135deg,
+      #089447,
+      oklch(18.383% 0.15579 150.805)
+    );
     height: 100%;
     width: 200px;
     top: 0;
